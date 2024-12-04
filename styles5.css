@@ -1,0 +1,141 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+header h1 {
+    font-size: 2.5;
+}
+
+header h1:hover {
+    color: #f0f0f0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ul {
+    margin: 15px;
+}
+
+ul{
+    color: #fff;
+    font-size: 1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 60px;
+    text-align: center;
+}
+
+
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2575fc;
+    transition: color 0.3s;
+}
+
+.section h2:hover {
+    color: #6a11cb;
+}
+
+.section p {
+    margin-bottom: 20px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.section p:hover {
+    color: #333;
+}
+
+.section .btn {
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1;
+}
+
+.section .btn:hover {
+    box-shadow: 0 8px 15px rgba(37, 117, 252, 0.3);
+    background-color: #6a11cb;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1;
+    margin-top: 20px;
+}
+
+footer:hover {
+    background-color: #444;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 1.8;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5;
+    }
+
+    section h2 {
+        font-size: 1.5;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 1;
+    }
+}
